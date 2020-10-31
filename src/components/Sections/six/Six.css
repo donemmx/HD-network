@@ -1,0 +1,77 @@
+.six__main {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 100vh;
+}
+.six__left img {
+  width: 350px;
+}
+
+.form {
+  display: block;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  margin-top: 20px;
+}
+
+form #form__button {
+  padding: 12px 20px;
+  background: #3145fd;
+  box-shadow: -1px 5px 22px rgba(188, 151, 254, 0.67);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  margin: 20px 0;
+  width: 100%;
+  cursor: pointer;
+  margin-right: 40px;
+  transition: all 0.5s ease-in;
+  position: relative;
+}
+
+#form {
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 5px;
+  margin: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+#form__message {
+  border: none;
+
+  height: 100px;
+  border-bottom: 1px solid black;
+  padding: 5px;
+  margin: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+#form:focus {
+  border-bottom: 2px solid blue;
+  color: blue;
+}
+#form:focus {
+  border-bottom: 2px solid blue;
+  color: blue;
+}
+
+.form__title h2 {
+  font-size: 14px;
+  text-align: center;
+}
+
+.form__title h1 {
+  font-size: 32px;
+  text-align: center;
+}

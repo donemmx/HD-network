@@ -1,0 +1,90 @@
+.seven__main {
+  width: 70vw;
+  padding: 5rem 0 1rem 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.seven__left {
+  margin-bottom: 50px;
+}
+
+.seven__right:hover .line {
+  transform: scaleX(1.5);
+  transition: transform 0.5s;
+}
+.seven__left img {
+  object-fit: contain;
+  width: 22rem;
+}
+
+.seven__right h3 {
+  color: rgba(227, 11, 24, 0.9);
+  font-size: 14px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.seven__right h2 {
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  color: #000000;
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+}
+.line {
+  width: 100px;
+  height: 3px;
+  border-radius: 5px;
+  background: #000;
+  margin-bottom: 50px;
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.seven__right p {
+  font-size: 0.9rem;
+  line-height: 24px;
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .seven__main {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .seven__left {
+    width: 55%;
+  }
+  .seven__right {
+    width: 40%;
+    justify-content: flex-end;
+  }
+  .seven__right img {
+    object-fit: contain;
+    width: 20rem;
+  }
+  .seven__right h3 {
+    font-size: 18px;
+  }
+  .seven__right h2 {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .seven__left {
+    width: 55%;
+  }
+  .seven__right {
+    width: 45%;
+  }
+  .seven__left img {
+    object-fit: contain;
+    width: 33rem;
+  }
+}

@@ -1,0 +1,130 @@
+.section__main {
+  width: 100%;
+  position: relative;
+}
+.section {
+  width: 70vw;
+
+  padding: 5rem 0 1rem 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.section__main::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 80px;
+  top: 150px;
+  background: red;
+  right: 0;
+}
+.section__main::before {
+  content: "";
+}
+
+.section__left {
+  margin-bottom: 50px;
+}
+
+.section__left:hover .line {
+  transform: scaleX(1.5);
+  transition: transform 0.5s;
+}
+.section__right img {
+  object-fit: contain;
+  width: 15rem;
+}
+
+.section__left h3 {
+  color: rgba(227, 11, 24, 0.9);
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+.section__left h2 {
+  font-size: 1.5rem;
+  line-height: 1.15;
+  color: #141414;
+  margin-bottom: 20px;
+  width: 80%;
+  position: relative;
+}
+.line {
+  width: 100px;
+  height: 3px;
+  border-radius: 5px;
+  background: #000;
+  margin-bottom: 50px;
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.section__left p {
+  line-height: 1.6;
+  font-size: 15px;
+  color: #5d5d5d;
+}
+.section__right {
+  position: relative;
+}
+
+.section__right #hd {
+  position: absolute;
+  width: 17rem;
+  left: -1.2rem;
+  top: -22rem;
+  z-index: -1;
+}
+
+.section__right #dish {
+  mix-blend-mode: multiply;
+}
+
+@media (min-width: 768px) {
+  .section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section__left {
+    width: 55%;
+  }
+  .section__right {
+    width: 40%;
+  }
+  .section__right img {
+    object-fit: contain;
+    width: 20rem;
+  }
+  .section__left h3 {
+    font-size: 18px;
+  }
+  .section__left h2 {
+    font-size: 2rem;
+  }
+
+  .section__right #hd {
+    width: 35rem;
+    left: -16rem;
+    top: 0rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section__left {
+    width: 45%;
+  }
+  .section__right {
+    width: 40%;
+  }
+  .section__right img {
+    object-fit: contain;
+    width: 30rem;
+  }
+  .section__right #hd {
+    width: 60rem;
+    left: -29rem;
+    top: 2rem;
+  }
+}

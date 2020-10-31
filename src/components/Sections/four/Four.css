@@ -1,0 +1,84 @@
+.main__four {
+  background-color: rgba(32, 32, 32, 0.89);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+}
+.four {
+  width: 70vw;
+  padding: 4rem 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.four__left {
+  margin-bottom: 50px;
+}
+
+.four__left h2 {
+  font-size: 1.5rem;
+  line-height: 1.15;
+  color: #ffffff;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.four__left p {
+  font-size: 0.97rem;
+  line-height: 1.5;
+  color: #dfdfdf;
+  margin: 30px 0;
+}
+
+.four__image {
+  max-width: 426px;
+  filter: drop-shadow(0px 4px 10px #0000002a);
+  border-radius: 5px;
+}
+
+img.broadcast {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+#four__left {
+  padding: 12px 20px;
+  background: #3145fd;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-right: 40px;
+  transition: all 0.3s ease-in;
+}
+
+#four__left:hover {
+  background: #ffffff;
+  color: black;
+  /* transform: scale(1.05); */
+}
+
+@media (min-width: 768px) {
+  .four__left h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .four {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .four__left {
+    width: 40%;
+  }
+  .four__right {
+    width: 40%;
+  }
+}
