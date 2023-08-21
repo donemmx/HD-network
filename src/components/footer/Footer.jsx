@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   const date = new Date().getFullYear();
   const [email, setEmail] = useState("");
-  const [emailError, setEmailError] = useState("");
+  const [emailError, setEmailError] = useState();
   const [loading, setLoading] = useState(false);
 
   function isValidEmail(email) {
