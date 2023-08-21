@@ -1,25 +1,206 @@
-:root {
-  scroll-behavior: smooth;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "neue-light";
+  src: url(./assets/font/NeueHaasDisplay-Light.ttf);
+  font-weight: 200;
+}
+@font-face {
+  font-family: "neue";
+  src: url(./assets/font/NeueHaasDisplay-Roman.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "neue-medium";
+  src: url(./assets/font/NeueHaasDisplay-Mediu.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "neue-bold";
+  src: url(./assets/font/NeueHaasDisplay-Bold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "neue-black";
+  src: url(./assets/font/NeueHaasDisplay-Black.ttf);
+  font-weight: 800;
+}
+
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
 }
 
 * {
   margin: 0;
   padding: 0;
-  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: ;
 }
 
 body {
-  margin: 0;
-  font-family: "Open Sans", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "neue";
+  font-weight: 300;
+  color: #222;
 }
 
-a {
-  text-decoration: none;
+.distribution {
+  background-image: url("https://res.cloudinary.com/dzrrdkd7i/image/upload/v1689929174/distribution_pdpwmc.webp");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/* reset toastify */
+.Toastify__toast-container--top-right {
+  top: 12% !important;
+  transform: translateX(0);
+}
+
+.hero {
+  height: 500vh;
+  width: 100vw;
+}
+
+#v0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#scrollSection {
+  display: block;
+}
+
+.sec__btn {
+  border-radius: 40px;
+  border-style: solid;
+  border-image: linear-gradient(
+    rgba(76, 132, 247, 1),
+    rgba(132, 3, 159, 0.49),
+    rgba(241, 135, 88, 1)
+  );
+
+  border-image-slice: 1;
+  border-width: 1px;
+}
+
+.head__one {
+  font-size: clamp(3rem, 8vw, 7rem);
+  font-family: "neue-black";
+  background: linear-gradient(135deg, #3e4095 0%, #8f00ff 51.01%, #ff5c00 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient_text {
+  font-family: "neue-black";
+  background: linear-gradient(135deg, #3e4095 0%, #8f00ff 51.01%, #ff5c00 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.head__two {
+  font-size: clamp(1.8rem, 4.5vw, 3rem);
+  font-family: "neue-black";
+}
+.head__three {
+  font-size: clamp(1.3rem, 4.5vw, 3.5rem);
+  font-family: "neue-black";
+}
+.head__four {
+  font-size: clamp(1.3rem, 4.5vw, 2rem);
+  font-family: "neue-black";
+}
+
+.paragraph {
+  font-size: clamp(0.85rem, 2.5vw, 1.15rem);
+}
+
+.container {
+  width: 85%;
+  margin-inline: auto;
+}
+
+.bold {
+  font-family: "neue-bold";
+}
+.black {
+  font-family: "neue-black";
+}
+.medium {
+  font-family: "neue-medium";
+}
+.light {
+  font-family: "neue-light";
+}
+
+.tvContainer {
+  height: 75.5%;
+}
+
+.videoPoistion {
+  position: absolute;
+  top: 50.8%;
+  left: 47.5%;
+  transform: translate(-50%, -50%);
+  height: 73%;
+  width: 86.4%;
+  background: #000;
+}
+/* 
+.heroTwo::after {
+  content: "";
+  position: absolute;
+  height: 40vh;
+  width: 100%;
+  background: white;
+  bottom: 0;
+} */
+
+.card {
+  border-radius: 20.893px;
+  background: #fff;
+  box-shadow: 0px 28.727678298950195px 26.116069793701172px 0px
+    rgba(238, 240, 244, 0.65);
+}
+.aboutcard {
+  border-radius: 20.893px;
+  box-shadow: 0px 28.727678298950195px 26.116069793701172px 0px
+    rgba(113, 160, 255, 0.258);
+}
+
+.gradientLeft {
+  background: linear-gradient(101deg, #10131e 0%, rgba(31, 33, 52, 0) 100%),
+    lightgray 280px -233.061px / 100% 188.616% no-repeat;
+}
+
+.react-player {
+  width: 100% !important;
+  height: 100% !important;
+}
+.react-player video {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+@media screen and (max-width: 560px) {
+  .container {
+    width: 90%;
+  }
 }

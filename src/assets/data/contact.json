@@ -1,0 +1,29 @@
+[
+  {
+    "id":1,
+    "title": "Chat Support",
+    "content": "We are here to help via our WhatsApp Channel",
+    "links": []
+  },
+  {
+    "id":2,
+    "title": "Email Support",
+    "content": "We are here to help",
+    "links": ["sales@hd-networks.com"]
+  },
+  {
+    "id":3,
+    "title": "Phone Support",
+    "content": "Mon. - Sun 8am to 6pm",
+    "links": ["+23481 2224 5121", "+44 7456 171838, +44 1604 346000 "]
+  },
+  {
+    "id":4,
+    "title": "Visit Us",
+    "content": "Visit our office HQ",
+    "links": [
+      "Kemp House 160 City Road, London EC1V 2NX",
+      "Magodo Phase 2 Lagos. Nigeria."
+    ]
+  }
+]

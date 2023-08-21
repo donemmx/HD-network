@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "title": "Broadcast & Gaming",
+    "content": "We currently provide broadcast services to market leaders in the gaming industry across Africa and Europe",
+    "link": "/services#broadcast",
+    "image": "https://res.cloudinary.com/dzrrdkd7i/image/upload/v1692638445/broadcast-bg-2-1_j9n6xs.webp",
+    "reverse": true,
+    "sectionId": "broadcast"
+  },
+
+  {
+    "id": 3,
+    "title": "Consulting",
+    "content": "The strategic partnerships we have built over the years have given us local and transcontinental reach.",
+    "link": "/services#consult",
+    "image": "https://res.cloudinary.com/dzrrdkd7i/image/upload/v1692638446/consulting-bg-1-1_cuzabg.webp",
+    "reverse": true,
+    "sectionId": "consult"
+  },
+  {
+    "id": 4,
+    "title": "Colocation Service",
+    "content": "We offer secure colocation services in our UK data centers with advanced infrastructure and stringent security.",
+    "link": "/services#collocation",
+    "image": "https://res.cloudinary.com/dzrrdkd7i/image/upload/v1692638515/colocation-1-1_ymtape.webp",
+    "reverse": false,
+    "sectionId": "collocation"
+  },
+  {
+    "id": 5,
+    "title": "Satellite Hardware & Accessories",
+    "content": "We provide the most efficient and cost effective hardware for our domestic and enterprise customers.",
+    "link": "/services#hardware",
+    "image": "https://res.cloudinary.com/dzrrdkd7i/image/upload/v1692638449/hardware-bg-1-1_cip1q8.webp",
+    "reverse": true,
+    "sectionId": "hardware"
+  },
+  {
+    "id": 6,
+    "title": "Content",
+    "content": "We seamlessly manage & deliver a wide array of content, leveraging our expertise in both sourcing & broadcasting to meet the unique needs of our customers.",
+    "link": "/services#content",
+    "image": "https://res.cloudinary.com/dzrrdkd7i/image/upload/v1692639516/content-bg-1_bk4laa.webp",
+    "reverse": false,
+    "sectionId": "content"
+  }
+]

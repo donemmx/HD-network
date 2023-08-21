@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "24/7 IT helpdesk",
+    "content": "Access to experienced IT engineers and specialists around the clock whenever your organisation needs it. "
+  },
+  {
+    "id": 2,
+    "title": "Proactive approach",
+    "content": "Our proactive general maintenance and ongoing monitoring help to prevent IT problems, rather than just solve them.  "
+  },
+  {
+    "id": 3,
+    "title": "Scalable solutions ",
+    "content": "Our team and breadth of experience mean our IT services grow with your business. You won’t outgrow our capabilities.  "
+  },
+  {
+    "id": 4,
+    "title": "Excellent customer service ",
+    "content": "We’re dedicated to keeping our customers happy.  "
+  },
+  {
+    "id": 5,
+    "title": "Cost-effective",
+    "content": "We have a reputation for being competitive with our pricing but we are not cheap and cheerful "
+  }
+]
