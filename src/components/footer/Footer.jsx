@@ -62,7 +62,7 @@ export default function Footer() {
 
             {loading ? (
               <button
-                disabled={email}
+                disabled={loading}
                 className="text-sm flex items-center gap-2 bg-gray-500 p-3 px-5 placeholder:text-sm rounded-md text-white"
               >
                 {loading ? (
